@@ -1,0 +1,21 @@
+---
+import { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro"
+import {getTranslation} from "../../i18n/utils"
+
+const {locale} = Astro.params
+
+export const getStaticPaths = (() => {
+  return [
+    {params:{locale:'es'}},
+    {params:{locale:'en'}},
+    {params:{locale:'fr'}},
+  ];
+  }) satisfies GetStaticPaths;
+
+const t = getTranslation(locale)
+---
+
+<Layout>
+  <p class="text-xl">Hola mundo {locale}</p>
+</Layout>
