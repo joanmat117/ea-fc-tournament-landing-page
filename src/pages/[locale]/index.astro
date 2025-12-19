@@ -1,7 +1,9 @@
 ---
-import { GetStaticPaths } from "astro";
+import {type GetStaticPaths } from "astro";
 import Layout from "../../layouts/Layout.astro"
 import {getTranslation} from "../../i18n/utils"
+import Hero from "../../components/Hero.astro"
+import Header from "../../components/Header.astro"
 
 const {locale} = Astro.params
 
@@ -15,7 +17,9 @@ export const getStaticPaths = (() => {
 
 const t = getTranslation(locale)
 ---
-
 <Layout>
-  <p class="text-xl">Hola mundo {locale}</p>
+  <Header/>
+  <div class="max-w-5xl min-h-dvh border mx-auto">
+    <Hero/>
+  </div>
 </Layout>

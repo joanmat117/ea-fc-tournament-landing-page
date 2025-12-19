@@ -1,0 +1,56 @@
+---
+import {getTranslation} from "../i18n/utils.ts"
+import Menu from "./icons/Menu.astro"
+
+const lang = Astro.currentLocale
+const t = await getTranslation(lang)
+---
+
+<header class="sticky bg-slate-100 top-0 left-0 w-vw">
+  <div class="w-full max-w-5xl mx-auto flex p-1 items-center justify-between">
+    <p class="text-2xl font-bold text-blue-700">{t.header.logo}</p>
+    
+    <button class="px-4 py-2 rounded-full text-md bg-emerald-500 text-white font-semibold">{t.header.ctaButton}</button>
+    
+    <button id="open-mobile-nav" class="border-2 rounded-full p-1 border-gray-500/20">
+      <Menu/>
+    </button>
+    
+    <nav id="mobile-nav" class="fixed top-0 w-dvw h-dvh flex flex-col justify-center items-center gap-4 left-full transition-all duration-500 ease-in-out bg-white z-50">
+      {
+      t.header.nav &&
+        Object.entries(t.header.nav).map(([key,text])=>(
+          <a href={`#${key}`} class="text-lg font-medium transition px-3 py-2 border-2 border-transparent rounded-lg hover:border-emerald-400" >{text}</a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+const openMobileNav = document.getElementById('open-mobile-nav')
+const mobileNav = document.getElementById('mobile-nav')
+const closeMobileNav = document.getElementById('close-mobile-nav')
+
+if (openMobileNav) {
+  openMobileNav.onclick = () => {
+    mobileNav?.classList.remove('left-full')
+    mobileNav?.classList.add('left-0')
+  }
+}
+
+if (closeMobileNav) {
+  closeMobileNav.onclick = () => {
+    mobileNav?.classList.remove('left-0')
+    mobileNav?.classList.add('left-full')
+  }
+}
+
+mobileNav?.addEventListener('click', (e) => {
+  if (e.target === mobileNav) {
+    mobileNav.classList.remove('left-0')
+    mobileNav.classList.add('left-full')
+  }
+})
+
+</script>
