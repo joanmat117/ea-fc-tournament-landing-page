@@ -1,16 +1,17 @@
 ---
 import { getTranslation } from "../i18n/utils"
+import CtaButton from "./CtaButton.astro"
 
 const t = await getTranslation(Astro.currentLocale)
 ---
 
-<section class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-dvh bg-center bg-cover ">
-  <div id='dark-filter' class="min-h-dvh w-full flex flex-col bg-black/40 flex justify-center items-center py-15 px-2 gap-2 text-slate-50">
+<section class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-lvh bg-center bg-cover ">
+  <div id='dark-filter' class="min-h-lvh w-full flex flex-col bg-black/60 flex justify-center items-center py-15 px-2 gap-2 text-slate-50">
     <div class="flex flex-col justify-center items-center gap-5 py-40">
-      <h1 class="text-5xl text-shadow-md text-shadow-slate-300/30 font-extrabold tracking-tight sm:text-center text-heading md:text-5xl lg:text-6xl">
+      <h1 class="text-5xl text-shadow-md  font-extrabold tracking-tight sm:text-center text-heading md:text-5xl lg:text-6xl">
   {t.hero.title}
     </h1>
-    <p class="text-lg font-normal text-body lg:text-xl sm:text-center sm:px-16 xl:px-48">
+    <p class="text-lg font-normal w-full text-body lg:text-xl sm:text-center sm:px-16 xl:px-48">
       {t.hero.subtitle}
       </p>
     </div>
@@ -44,10 +45,8 @@ const t = await getTranslation(Astro.currentLocale)
         {t.hero.slots.remaining + ' / ' + t.hero.slots.total}
       </span>
     </div>
-    <div class="flex gap-3 my-6 items-center justify-between">
-    <button class="bg-green-500 flex border-3 border-green-100/20 px-6 py-2 shadow-lg transition-all hover:scale-105 hover:tracking-wider text-lg cursor-pointer shadow-green-400/60 font-extrabold text-emerald-50 rounded-full">
-      {t.hero.ctaButton}
-      </button>
+    <div class="flex flex-col sm:flex-row gap-3 my-6 items-center justify-between">
+      <CtaButton/>  
       <button class="text-md px-3 py-2 border-2 backdrop-blur-md cursor-pointer transition-all font-bold border-slate-50/30 rounded-full hover:scale-105 hover:tracking-wider">
         {t.hero.secondaryButton}
     </button>
