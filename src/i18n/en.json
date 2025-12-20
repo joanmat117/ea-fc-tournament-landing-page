@@ -1,0 +1,303 @@
+{
+  "header": {
+    "logo": "EA FC 24 Madrid Tournament",
+    "nav": {
+      "home": "Home",
+      "about": "About the tournament",
+      "prizes": "Prizes",
+      "schedule": "Schedule",
+      "location": "Location",
+      "faq": "FAQ"
+    },
+    "ctaButton": "Register Now"
+  },
+  
+  "hero": {
+    "title": "EA Sports FC 24 Open Tournament",
+    "subtitle": "Showcase your skills at the city's biggest gaming event",
+    "date": "November 23, 2024",
+    "time": "11:00 AM - 7:00 PM",
+    "location": "Municipal Sports Center",
+    "address": "Calle Deportes, 45, Madrid",
+    "slots": {
+      "available": "Available spots",
+      "total": "32",
+      "remaining": "12"
+    },
+    "ctaButton": "Reserve my spot - 12€",
+    "secondaryButton": "View more details"
+  },
+  
+  "about": {
+    "title": "About the tournament",
+    "description": "A full day dedicated to EA Sports FC 24 competition where players of all levels can showcase their talent. A competitive yet friendly atmosphere, perfect for meeting other virtual football fans.",
+    "features": [
+      {
+        "title": "32 Participants",
+        "description": "Limited capacity to ensure the best experience"
+      },
+      {
+        "title": "4 PS5 Stations",
+        "description": "Professional equipment with gaming monitors"
+      },
+      {
+        "title": "Knockout Format",
+        "description": "Exciting matches from the first minute"
+      },
+      {
+        "title": "Latest EA FC 24 Version",
+        "description": "We play with the most updated edition"
+      }
+    ]
+  },
+  
+  "prizes": {
+    "title": "Prizes",
+    "subtitle": "Recognition for the best players",
+    "items": [
+      {
+        "position": "1st Place",
+        "prize": "200€",
+        "extra": "+ Champion trophy",
+        "highlight": true
+      },
+      {
+        "position": "2nd Place",
+        "prize": "100€",
+        "extra": "+ Medal",
+        "highlight": false
+      },
+      {
+        "position": "3rd Place",
+        "prize": "50€",
+        "extra": "+ Medal",
+        "highlight": false
+      }
+    ],
+    "note": "All participants will receive an official certificate of participation"
+  },
+  
+  "schedule": {
+    "title": "Daily Schedule",
+    "items": [
+      {
+        "time": "11:00 - 11:30",
+        "activity": "Registration and accreditation",
+        "description": "Document presentation and credential handover"
+      },
+      {
+        "time": "11:30 - 12:00",
+        "activity": "Presentation and draw",
+        "description": "Rules explanation and match draw"
+      },
+      {
+        "time": "12:00 - 14:00",
+        "activity": "First phase",
+        "description": "Initial EA FC 24 knockout matches"
+      },
+      {
+        "time": "14:00 - 15:00",
+        "activity": "Break",
+        "description": "Time to eat and rest"
+      },
+      {
+        "time": "15:00 - 17:00",
+        "activity": "Knockout stages",
+        "description": "Round of 16 and quarter-finals"
+      },
+      {
+        "time": "17:00 - 18:00",
+        "activity": "Semi-finals and final",
+        "description": "The best compete for the title"
+      },
+      {
+        "time": "18:00 - 18:30",
+        "activity": "Awards ceremony",
+        "description": "Official ceremony and photos"
+      }
+    ]
+  },
+  
+  "howTo": {
+    "title": "How to participate",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Fill out the form",
+        "description": "Provide your basic information"
+      },
+      {
+        "number": "2",
+        "title": "Make the payment",
+        "description": "12€ via transfer or cash"
+      },
+      {
+        "number": "3",
+        "title": "Receive confirmation",
+        "description": "We'll send you an email with the details"
+      },
+      {
+        "number": "4",
+        "title": "Show up on event day",
+        "description": "Arrive 30 minutes early with your ID"
+      }
+    ],
+    "ctaButton": "Start registration"
+  },
+  
+  "registration": {
+    "title": "Registration Form",
+    "fields": {
+      "fullName": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "age": "Age",
+      "nickname": "EA FC nickname (optional)",
+      "terms": "I accept the tournament rules",
+      "submit": "Pay registration - 12€"
+    },
+    "success": "Registration completed! Check your email for confirmation.",
+    "error": "Error processing registration. Please try again."
+  },
+  
+  "location": {
+    "title": "Location",
+    "address": {
+      "title": "Municipal Sports Center",
+      "street": "Calle Deportes, 45",
+      "city": "28045 Madrid"
+    },
+    "transport": {
+      "title": "How to get there",
+      "metro": {
+        "title": "Metro",
+        "description": "Line 4, 'Deportivos' station (exit 2)"
+      },
+      "bus": {
+        "title": "Bus",
+        "description": "Lines 12, 45, 78 - 'Polideportivo' stop"
+      },
+      "parking": {
+        "title": "Parking",
+        "description": "Available at the center (3€ all day)"
+      }
+    }
+  },
+  
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Which version of EA FC will be used?",
+        "answer": "EA Sports FC 24, the most recent version, with all official teams updated."
+      },
+      {
+        "question": "What do I need to bring to the tournament?",
+        "answer": "Only your ID or identification document. We provide consoles, monitors, and controllers."
+      },
+      {
+        "question": "Can I use my own controller?",
+        "answer": "Yes, you can bring your own PS5 controller if you prefer. Make sure it's charged."
+      },
+      {
+        "question": "Is there a minimum age to participate?",
+        "answer": "Minimum age is 14. Minors under 18 need parental authorization."
+      },
+      {
+        "question": "What if I'm late?",
+        "answer": "Registration closes at 11:30 AM. Arriving later may result in disqualification."
+      },
+      {
+        "question": "Can I bring guests?",
+        "answer": "Yes, each participant can bring up to 2 guests. Access is free for them."
+      },
+      {
+        "question": "How is the registration fee paid?",
+        "answer": "By bank transfer or in cash on the event day (only if spots remain)."
+      },
+      {
+        "question": "Is there a refund if I cannot attend?",
+        "answer": "100% refund up to 48 hours before. No refunds after that."
+      }
+    ]
+  },
+  
+  "contact": {
+    "title": "Contact",
+    "email": {
+      "label": "Email",
+      "value": "info@torneoeafc24madrid.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "910 000 000"
+    },
+    "hours": {
+      "label": "Service hours",
+      "value": "Monday to Friday: 10:00 AM - 2:00 PM"
+    },
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "send": "Send message"
+    }
+  },
+  
+  "footer": {
+    "logo": "EA FC 24 Madrid Tournament 2024",
+    "tagline": "The gaming competition you've been waiting for",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "prizes": "Prizes",
+      "schedule": "Schedule",
+      "location": "Location",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "terms": "Terms and conditions",
+      "privacy": "Privacy"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "discord": "Discord"
+    },
+    "copyright": "© 2024 EA FC 24 Madrid Tournament. All rights reserved."
+  },
+  
+  "modals": {
+    "registrationSuccess": {
+      "title": "Registration successful!",
+      "message": "You have successfully registered for the EA FC 24 Madrid Tournament. You will receive a confirmation email with all details within the next few minutes.",
+      "button": "Understood"
+    },
+    "confirmation": {
+      "title": "Confirm registration",
+      "message": "Are you sure you want to register for the tournament? The cost is 12€.",
+      "confirm": "Yes, register me",
+      "cancel": "Cancel"
+    }
+  },
+  
+  "buttons": {
+    "register": "Register",
+    "learnMore": "Learn more",
+    "viewSchedule": "View full schedule",
+    "viewMap": "View on map",
+    "contactUs": "Contact us",
+    "backToTop": "Back to top"
+  },
+  
+  "labels": {
+    "price": "Price",
+    "date": "Date",
+    "time": "Time",
+    "location": "Location",
+    "slots": "Spots",
+    "gameVersion": "EA Sports FC 24",
+    "platform": "PS5",
+    "rules": "Full rules",
+    "downloadRules": "Download regulations"
+  }
+}
