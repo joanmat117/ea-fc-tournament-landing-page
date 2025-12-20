@@ -7,10 +7,10 @@ const t = await getTranslation(Astro.currentLocale)
 <section class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-dvh bg-center bg-cover ">
   <div id='dark-filter' class="min-h-dvh w-full flex flex-col bg-black/40 flex justify-center items-center py-15 px-2 gap-2 text-slate-50">
     <div class="flex flex-col justify-center items-center gap-5 py-40">
-  <h1 class="text-5xl font-extrabold tracking-tight text-heading md:text-5xl lg:text-6xl">
+      <h1 class="text-5xl text-shadow-md text-shadow-slate-300/30 font-extrabold tracking-tight sm:text-center text-heading md:text-5xl lg:text-6xl">
   {t.hero.title}
     </h1>
-    <p class="text-lg font-normal text-body lg:text-xl sm:px-16 xl:px-48">
+    <p class="text-lg font-normal text-body lg:text-xl sm:text-center sm:px-16 xl:px-48">
       {t.hero.subtitle}
       </p>
     </div>
