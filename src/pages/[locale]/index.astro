@@ -4,6 +4,9 @@ import Layout from "../../layouts/Layout.astro"
 import {getTranslation} from "../../i18n/utils"
 import Hero from "../../components/Hero.astro"
 import Header from "../../components/Header.astro"
+import About from "../../components/About.astro"
+import Features from "../../components/Features.astro"
+import Prizes from "../../components/Prizes.astro"
 
 const {locale} = Astro.params
 
@@ -19,7 +22,10 @@ const t = getTranslation(locale)
 ---
 <Layout>
   <Header/>
-  <div class="max-w-5xl min-h-dvh border mx-auto">
+  <div class="max-w-5xl flex flex-col gap-10 pb-10 min-h-dvh mx-auto">
     <Hero/>
+    <About/>
+    <Features/>
+    <Prizes/>
   </div>
 </Layout>

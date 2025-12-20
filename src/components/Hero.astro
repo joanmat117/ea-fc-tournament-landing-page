@@ -1,6 +1,56 @@
-<section class="flex justify-center align-center py-3 px-2 mb-2">
-  <h1>
+---
+import { getTranslation } from "../i18n/utils"
 
-  </h1>
+const t = await getTranslation(Astro.currentLocale)
+---
 
+<section class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-dvh bg-center bg-cover ">
+  <div id='dark-filter' class="min-h-dvh w-full flex flex-col bg-black/40 flex justify-center items-center py-15 px-2 gap-2 text-slate-50">
+    <div class="flex flex-col justify-center items-center gap-5 py-40">
+  <h1 class="text-5xl font-extrabold tracking-tight text-heading md:text-5xl lg:text-6xl">
+  {t.hero.title}
+    </h1>
+    <p class="text-lg font-normal text-body lg:text-xl sm:px-16 xl:px-48">
+      {t.hero.subtitle}
+      </p>
+    </div>
+    <div class="flex my-6 w-full px-3 gap-5">
+      <div class="flex flex-1 flex-col backdrop-blur-md justify-center items-center gap-2 p-3 border-2 border-slate-50/30 rounded-3xl text-slate-300 text-sm text-center">
+        <h2 class="text-3xl text-slate-50">
+           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M19 16l-2 3h4l-2 3" /></svg>
+        </h2>
+        <p>
+          {t.hero.date}
+        </p>
+        <p>
+          {t.hero.time}
+        </p>
+      </div>
+      <div class="flex flex-1 flex-col backdrop-blur-md justify-center items-center gap-2  p-3 border-2 border-slate-50/30 rounded-3xl text-slate-300 text-sm text-center">
+        <h2 class="text-3xl text-slate-50">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+        </h2>
+        <p>
+          {t.hero.location}
+        </p>
+        <p>
+          {t.hero.address}
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3 my-3 text-lg text-slate-200 justify-center">
+      {t.hero.slots.available}
+      <span class="text-3xl rounded-2xl border-2 border-slate-50/30 px-2 py-1 backdrop-blur-md font-bold text-center">
+        {t.hero.slots.remaining + ' / ' + t.hero.slots.total}
+      </span>
+    </div>
+    <div class="flex gap-3 my-6 items-center justify-between">
+    <button class="bg-green-500 flex border-3 border-green-100/20 px-6 py-2 shadow-lg transition-all hover:scale-105 hover:tracking-wider text-lg cursor-pointer shadow-green-400/60 font-extrabold text-emerald-50 rounded-full">
+      {t.hero.ctaButton}
+      </button>
+      <button class="text-md px-3 py-2 border-2 backdrop-blur-md cursor-pointer transition-all font-bold border-slate-50/30 rounded-full hover:scale-105 hover:tracking-wider">
+        {t.hero.secondaryButton}
+    </button>
+    </div>
+  </div>
 </section>
