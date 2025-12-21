@@ -5,7 +5,7 @@ import CtaButton from "./CtaButton.astro"
 const t = await getTranslation(Astro.currentLocale)
 ---
 
-<section class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-lvh bg-center bg-cover ">
+<section id="home" class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-lvh bg-center bg-cover ">
   <div id='dark-filter' class="min-h-lvh w-full flex flex-col bg-black/60 flex justify-center items-center py-15 px-2 gap-2 text-slate-50">
     <div class="flex flex-col justify-center items-center gap-5 py-40">
       <h1 class="text-5xl text-shadow-md  font-extrabold tracking-tight sm:text-center text-heading md:text-5xl lg:text-6xl">
@@ -15,8 +15,8 @@ const t = await getTranslation(Astro.currentLocale)
       {t.hero.subtitle}
       </p>
     </div>
-    <div class="flex my-6 w-full px-3 gap-5">
-      <div class="flex flex-1 flex-col backdrop-blur-md justify-center items-center gap-2 p-3 border-2 border-slate-50/30 rounded-3xl text-slate-300 text-sm text-center">
+    <div class="flex my-6 w-full px-3 gap-5 justify-around">
+      <div class="flex w-full max-w-md flex-col backdrop-blur-md justify-center items-center gap-2 p-3 border-2 border-slate-50/30 rounded-3xl text-slate-300 text-sm text-center">
         <h2 class="text-3xl text-slate-50">
            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M19 16l-2 3h4l-2 3" /></svg>
         </h2>
@@ -27,7 +27,7 @@ const t = await getTranslation(Astro.currentLocale)
           {t.hero.time}
         </p>
       </div>
-      <div class="flex flex-1 flex-col backdrop-blur-md justify-center items-center gap-2  p-3 border-2 border-slate-50/30 rounded-3xl text-slate-300 text-sm text-center">
+      <div class="flex w-full max-w-md flex-col backdrop-blur-md justify-center items-center gap-2  p-3 border-2 border-slate-50/30 rounded-3xl text-slate-300 text-sm text-center">
         <h2 class="text-3xl text-slate-50">
 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
         </h2>

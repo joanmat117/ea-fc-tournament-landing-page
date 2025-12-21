@@ -7,6 +7,7 @@ import Header from "../../components/Header.astro"
 import About from "../../components/About.astro"
 import Features from "../../components/Features.astro"
 import Prizes from "../../components/Prizes.astro"
+import Schedule from "../../components/Schedule.astro"
 
 const {locale} = Astro.params
 
@@ -22,10 +23,11 @@ const t = getTranslation(locale)
 ---
 <Layout>
   <Header/>
-  <div class="max-w-5xl flex flex-col gap-10 pb-10 min-h-dvh mx-auto">
+  <div class="max-w-[1380px] flex flex-col gap-10 pb-10 min-h-dvh mx-auto">
     <Hero/>
     <About/>
     <Features/>
     <Prizes/>
+    <Schedule/>
   </div>
 </Layout>

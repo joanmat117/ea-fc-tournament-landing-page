@@ -25,7 +25,7 @@ return <>
       {
       translation.header.nav &&
         Object.entries(translation.header.nav).map(([key,text]:any,index:number)=>(
-          <a href={`#${key}`} className="text-lg font-medium transition px-4 py-2 rounded-full border-2 flex gap-2 items-center border-slate-300/40 text-slate-50 bg-slate-100/10" > 
+          <a href={`#${key}`} className="text-lg font-medium transition px-4 py-2 rounded-full border-2 flex gap-2 items-center hover:scale-105 hover:tracking-wider transition-all ease-in-out border-slate-300/40 text-slate-50 bg-slate-100/10" > 
                 <span>
                   {sectionIcons[index]}
                 </span>
