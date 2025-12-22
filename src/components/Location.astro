@@ -54,7 +54,7 @@ const transports:Transport[] = [
   </h3>
   <ul class="flex mb-2 flex-wrap gap-2 max-w-4xl mx-auto w-full">
     {transports.map(transport=>(
-    <article class="flex-1 rounded-xl overflow-hidden bg-blue-400/50 min-w-30 text-slate-100 border-2 border-blue-400 shadow">
+    <article class="flex-1 rounded-xl overflow-hidden bg-blue-400/50 min-w-40 text-slate-100 border-2 border-blue-400 shadow">
       <picture>
         <source media='(min-width:760px)' srcset={transport.imageDesktop} />
         <img src={transport.imageMobile} alt={transport.title} 
