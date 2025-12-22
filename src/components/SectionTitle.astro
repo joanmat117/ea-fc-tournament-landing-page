@@ -1,0 +1,19 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+
+
+interface Props extends HTMLAttributes<'h2'>{
+  title:string
+}
+
+const {class:className,title, ...atts} = Astro.props
+---
+
+
+<h2 class={`text-4xl mb-5 text-balance drop-shadow-sm font-bold ${className}`} {...atts}>
+  {title}
+  <span class="inline-block">
+    <slot/>
+  </span>
+    </h2>
+

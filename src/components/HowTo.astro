@@ -1,0 +1,34 @@
+---
+import { getTranslation } from "../i18n/utils";
+import CtaButton from "./CtaButton.astro";
+import SectionTitle from "./SectionTitle.astro";
+
+const t = await getTranslation(Astro.currentLocale)
+---
+
+<section class="p-2">
+  <SectionTitle
+  title={t.howTo.title}
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-clipboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.997 4.17a3 3 0 0 1 2.003 2.83v12a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 2.003 -2.83a4 4 0 0 0 3.997 3.83h4a4 4 0 0 0 3.98 -3.597zm-3.997 -2.17a2 2 0 1 1 0 4h-4a2 2 0 1 1 0 -4z" /></svg>
+  </SectionTitle>
+  <ol class='grid gap-1 grid-cols-[repeat(auto-fit,minmax(150px,1fr))]'>
+    {t.howTo.steps.map((step:{number:number,title:string,description:string})=>(
+    <article class="flex flex-col items-center p-1 py-3 gap-1">
+      <span class="aspect-square ring-2 ring-green-200 rounded-full font-bold p-1 text-lg text-center bg-green-500 text-shadow text-shadow-sm text-white">
+        {step.number}
+      </span>
+      <h3 class='font-semibold text-center text-lg py-2 text-slate-900'>
+        {step.title}
+      </h3>
+      <p class="text-slate-700 text-center">
+        {step.description}
+      </p>
+    </article>
+    ))}
+  </ol>
+  <CtaButton
+  cta={t.howTo.ctaButton}
+  class="shadow-none rounded-lg mx-auto mt-4"
+  /> 
+</section>

@@ -1,0 +1,51 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+const languages = [
+{ text: "Español", href: "/es",lang:'es' },
+{ text: "English", href: "/en",lang:'en' },
+{ text: "Français", href: "/fr",lang:'fr' },
+  ];
+
+  const lang = Astro.currentLocale
+
+interface Props extends HTMLAttributes<'div'> {}
+
+const {class:className,...atts} = Astro.props
+---
+
+<div class={"relative group w-fit "+className} {...atts} >
+  <!-- Botón del dropdown -->
+  <button 
+    type="button" 
+    class="inline-flex items-center justify-center text-white backdrop-blur-md border border-slate-50/30 transition-colors box-border  flex items-center gap-1   shadow-xs font-medium leading-5 rounded-full text-sm px-3 py-2 "
+  >
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+      {
+      lang === 'es' && 'Español'
+      }
+      {
+      lang === 'en' && 'English'
+      }
+      {
+      lang == 'fr' && 'Français'
+      }
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+  </button>
+
+  <!-- Menú del dropdown -->
+  <div class="absolute z-10 animate-fade-in mt-2 hidden group-focus-within:block bg-slate-100  rounded-xl right-0 shadow-lg w-44">
+    <ul class="p-1 text-sm text-gray-700 font-medium">
+      {languages.map((link) => (
+        <li>
+          <a 
+            href={link.href} 
+            class={`inline-flex items-center w-full p-2 px-3 rounded-lg ${lang === link.lang ? 'bg-slate-900 text-slate-50 ' : 'hover:bg-slate-200 hover:text-slate-700'}`}
+          >
+            {link.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

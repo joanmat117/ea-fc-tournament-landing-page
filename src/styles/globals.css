@@ -3,6 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 * {
-  font-family: 'Zalando Sans';
+  font-family: 'Zalando Sans',system-ui, sans-serif;
   scroll-behavior: smooth;
+}
+
+@theme {
+  --animate-fade-in: fade-in 0.4s ease-in-out both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity:0
+  }
+  to {
+    opacity:1
+  }
 }

@@ -1,12 +1,16 @@
 ---
 import { getTranslation } from "../i18n/utils"
 import CtaButton from "./CtaButton.astro"
+import LanguageDropdown from "./LanguageDropdown.astro"
 
 const t = await getTranslation(Astro.currentLocale)
 ---
 
 <section id="home" class="bg-[url(/hero.jpg)] overflow-hidden lg:rounded-b-2xl bg-fixed min-h-lvh bg-center bg-cover ">
-  <div id='dark-filter' class="min-h-lvh w-full flex flex-col bg-black/60 flex justify-center items-center py-15 px-2 gap-2 text-slate-50">
+  <div id='dark-filter' class="min-h-lvh w-full relative flex flex-col bg-black/60 flex justify-center items-center pt-2 pb-10 px-2 gap-2 text-slate-50">
+    <LanguageDropdown
+    class={'self-end'}
+    />
     <div class="flex flex-col justify-center items-center gap-5 py-40">
       <h1 class="text-5xl text-shadow-md  font-extrabold tracking-tight sm:text-center text-heading md:text-5xl lg:text-6xl">
   {t.hero.title}

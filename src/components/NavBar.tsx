@@ -18,13 +18,13 @@ return <>
     
     <button onClick={()=>{setIsOpen(!isOpen)}} className={`p-1 size-10 transition-colors duration-500 border-gray-500/20 cursor-pointer ${isOpen?'z-50 text-white':' '}`}>
       { isOpen?
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="animate-fade-in icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
       :
-      <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="animate-fade-in icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
       }
     </button>
     
-    <nav onClick={()=>setIsOpen(false)} className={`bg-[url(/hero.jpg)] overflow-auto bg-fixed bg-center bg-cover fixed top-0 w-dvw h-lvh  transition-all duration-500 bg-black z-40 ${isOpen?'left-0 ':'left-full '}`}>
+    <nav onClick={()=>setIsOpen(false)} className={`bg-[url(/hero.jpg)] overflow-auto bg-fixed lg:bg-scroll bg-center bg-cover fixed top-0 w-dvw h-lvh  transition-all duration-500 z-40 ${isOpen?'left-0 ':'left-full '}`}>
       <div className="flex flex-col backdrop-blur-md justify-center min-h-lvh py-4 w-vw items-center gap-4 bg-black/60">
       {
       translation.header.nav &&
