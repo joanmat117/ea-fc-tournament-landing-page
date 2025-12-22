@@ -1,0 +1,47 @@
+---
+interface Props {
+  question: string;
+  answer: string | any;
+  isOpen?: boolean;
+}
+
+const { question, answer, isOpen = false } = Astro.props;
+---
+
+<details class={`group border border-gray-200 rounded-xl overflow-hidden ${isOpen ? 'open' : ' '}`}>
+  <summary class="flex items-center justify-between w-full p-3 font-medium text-gray-900 bg-white hover:bg-gray-50 text-lg cursor-pointer list-none transition-colors duration-150">
+    <span class="text-left pr-4">{question}</span>
+    <svg 
+      class="w-5 h-5 text-gray-500 shrink-0 transform transition-transform duration-200 group-open:rotate-180" 
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7" />
+    </svg>
+  </summary>
+  
+  <div class="border-t border-gray-200">
+    <div class="p-5 text-gray-700">
+      {typeof answer === 'string' ? (
+        <div set:html={answer}></div>
+      ) : (
+        answer
+      )}
+    </div>
+  </div>
+</details>
+
+<style is:global>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary {
+    list-style: none;
+  }
+  
+  .group-open\:rotate-180 {
+    transform: rotate(180deg);
+  }
+</style>
