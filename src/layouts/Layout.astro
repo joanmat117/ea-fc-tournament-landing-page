@@ -1,16 +1,99 @@
 ---
+
 import "../styles/globals.css"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Torneo Abierto de FIFA Madrid</title>
+		<title>Torneo EA Sports FC 24 Madrid | Competición Oficial | Inscripciones Abiertas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- Icons --->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Torneo EA FC 24" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+
+<!-- Meta Tags básicos -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Torneo oficial de EA Sports FC 24 en Madrid. Compite por premios en efectivo, trofeos y reconocimiento. Inscripciones abiertas - Plazas limitadas.">
+<meta name="keywords" content="EA FC 24 Madrid, torneo gaming, competición FIFA, videojuegos Madrid, fútbol virtual, PS5, eventos gaming">
+<meta name="author" content="Torneo EA FC 24 Madrid">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Spanish">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torneoeafc24madrid.vercel.app">
+<meta property="og:title" content="Torneo EA Sports FC 24 Madrid - Competición Oficial">
+<meta property="og:description" content="Participa en el torneo oficial de EA FC 24 en Madrid. Premios en efectivo, ambiente competitivo, inscripciones abiertas.">
+<meta property="og:image" content="/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Torneo EA FC 24 Madrid - Evento Gaming">
+<meta property="og:site_name" content="Torneo EA FC 24 Madrid">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@TorneoEAFC24Mad">
+<meta name="twitter:creator" content="@TorneoEAFC24Mad">
+<meta name="twitter:title" content="Torneo EA FC 24 Madrid - Inscripciones Abiertas">
+<meta name="twitter:description" content="Centro Polideportivo Municipal. Premios en efectivo. Plazas limitadas. ¡Inscríbete ahora!">
+<meta name="twitter:image" content="/img/og-image.jpg">
+<meta name="twitter:image:alt" content="Torneo oficial de EA Sports FC 24 en Madrid">
+
+<!-- Información del evento sin fecha específica -->
+<meta property="og:event:place:location:latitude" content="40.4168">
+<meta property="og:event:place:location:longitude" content="-3.7038">
+<meta property="og:event:place:street_address" content="Calle Deportes, 45">
+<meta property="og:event:place:locality" content="Madrid">
+<meta property="og:event:place:postal_code" content="28045">
+<meta property="og:event:place:country" content="ES">
+
+
+<script is:inline type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Torneo EA Sports FC 24 Madrid",
+  "description": "Torneo oficial de EA Sports FC 24 con premios en efectivo y trofeos. Competición para jugadores de todos los niveles en Madrid.",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Centro Polideportivo Municipal",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Deportes, 45",
+      "addressLocality": "Madrid",
+      "postalCode": "28045",
+      "addressCountry": "ES"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Torneo EA FC 24 Madrid",
+    "url": "https://torneoeafc24madrid.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://torneoeafc24madrid.com#inscripcion",
+    "price": "12",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/LimitedAvailability"
+  },
+  "performer": {
+    "@type": "VideoGame",
+    "name": "EA Sports FC 24",
+    "gamePlatform": "PlayStation 5"
+  }
+}
+</script>
 	</head>
   <body class="bg-slate-100">
     <slot/>
