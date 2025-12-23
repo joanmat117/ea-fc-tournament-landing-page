@@ -63,8 +63,13 @@ import "../styles/globals.css"
   "@type": "Event",
   "name": "Torneo EA Sports FC 24 Madrid",
   "description": "Torneo oficial de EA Sports FC 24 con premios en efectivo y trofeos. Competición para jugadores de todos los niveles en Madrid.",
+  "startDate": "2024-12-31T10:00",
+  "endDate": "2024-12-31T20:00",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
+  "image": [
+    "https://torneoeafc24madrid.com/img/og-image.jpg"
+  ],
   "location": {
     "@type": "Place",
     "name": "Centro Polideportivo Municipal",
@@ -83,10 +88,11 @@ import "../styles/globals.css"
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://torneoeafc24madrid.com#inscripcion",
-    "price": "12",
+    "url": "https://torneoeafc24madrid.com/#inscripcion",
+    "price": 12,
     "priceCurrency": "EUR",
-    "availability": "https://schema.org/LimitedAvailability"
+    "availability": "https://schema.org/LimitedAvailability",
+    "validFrom": "2024-11-01T00:00"
   },
   "performer": {
     "@type": "VideoGame",
@@ -94,8 +100,7 @@ import "../styles/globals.css"
     "gamePlatform": "PlayStation 5"
   }
 }
-</script>
-	</head>
+</script>	</head>
   <body class="bg-slate-100">
     <slot/>
 	</body>
