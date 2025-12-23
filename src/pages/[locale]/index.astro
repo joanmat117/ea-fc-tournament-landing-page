@@ -11,6 +11,7 @@ import HowTo from "../../components/HowTo.astro";
 import Location from "../../components/Location.astro";
 import Faq from "../../components/Faq.astro";
 import Contact from "../../components/Contact.astro";
+import Footer from "../../components/Footer.astro";
 
 
 export const getStaticPaths = (() => {
@@ -24,7 +25,7 @@ export const getStaticPaths = (() => {
 ---
 <Layout>
   <Header/>
-  <div class="max-w-[1380px] flex flex-col gap-10 pb-10 min-h-dvh mx-auto">
+  <div class="max-w-[1380px] flex flex-col gap-10 min-h-dvh mx-auto">
     <Hero/>
     <About/>
     <Features/>
@@ -34,5 +35,6 @@ export const getStaticPaths = (() => {
     <Location/>
     <Faq/>
     <Contact/>
+    <Footer/>
   </div>
 </Layout>
