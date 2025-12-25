@@ -15,7 +15,7 @@
   "hero": {
     "title": "EA Sports FC 24 Open Tournament",
     "subtitle": "Showcase your skills at the city's biggest gaming event",
-    "date": "November 23, 2024",
+    "date": "November 23, 2025",
     "time": "11:00 AM - 7:00 PM",
     "location": "Municipal Sports Center",
     "address": "Calle Deportes, 45, Madrid",
@@ -245,7 +245,7 @@
   },
   
   "footer": {
-    "logo": "EA FC 24 Madrid Tournament 2024",
+    "logo": "EA FC 24 Madrid Tournament 2025",
     "tagline": "The gaming competition you've been waiting for",
     "links": {
       "home": "Home",
@@ -263,7 +263,7 @@
       "twitter": "Twitter",
       "discord": "Discord"
     },
-    "copyright": "© 2024 EA FC 24 Madrid Tournament. All rights reserved."
+    "copyright": "© 2025 EA FC 24 Madrid Tournament. All rights reserved."
   },
   
   "modals": {

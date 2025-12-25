@@ -15,7 +15,7 @@
   "hero": {
     "title": "Torneo Abierto de EA Sports FC 24",
     "subtitle": "Demuestra tus habilidades en el mayor evento gaming de la ciudad",
-    "date": "23 Noviembre 2024",
+    "date": "23 Noviembre 2025",
     "time": "11:00 - 19:00 horas",
     "location": "Centro Polideportivo Municipal",
     "address": "Calle Deportes, 45, Madrid",
@@ -245,7 +245,7 @@
   },
   
   "footer": {
-    "logo": "Torneo EA FC 24 Madrid 2024",
+    "logo": "Torneo EA FC 24 Madrid 2025",
     "tagline": "La competición gaming que estabas esperando",
     "links": {
       "home": "Inicio",
@@ -263,7 +263,7 @@
       "twitter": "Twitter",
       "discord": "Discord"
     },
-    "copyright": "© 2024 Torneo EA FC 24 Madrid. Todos los derechos reservados."
+    "copyright": "© 2025 Torneo EA FC 24 Madrid. Todos los derechos reservados."
   },
   
   "modals": {
