@@ -57,7 +57,7 @@ const transports:Transport[] = [
     <article class="flex-1 rounded-xl overflow-hidden bg-blue-400/50 min-w-40 text-slate-100 border-2 border-blue-400 shadow">
       <picture>
         <source media='(min-width:760px)' srcset={transport.imageDesktop} />
-        <img src={transport.imageMobile} alt={transport.title} 
+        <img loading="lazy" src={transport.imageMobile} alt={transport.title} 
         class="w-full max-h-40 object-cover aspect-square"
         decoding='async'
         />
